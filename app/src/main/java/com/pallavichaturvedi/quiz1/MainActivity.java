@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         newQuestion(turn);
                     } else {
                         Toast.makeText(MainActivity.this, "You finished the quiz", Toast.LENGTH_LONG).show();
-                        getResults();
+                       
                     }
                 } else {
                     //Toast.makeText(MainActivity.this, "Incorrect", Toast.LENGTH_LONG).show();
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         newQuestion(turn);
                     }else {
                         Toast.makeText(MainActivity.this,"You finished the quiz",Toast.LENGTH_LONG).show();
-                                getResults();
+                                
 
                     }
                 }
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
                         newQuestion(turn);
                     } else {
                         Toast.makeText(MainActivity.this, "You finished the quiz", Toast.LENGTH_LONG).show();
-                        getResults();
+                        
                     }
                 } else {
                    // Toast.makeText(MainActivity.this, "Incorrect", Toast.LENGTH_LONG).show();
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
                         newQuestion(turn);
                     }else {
                         Toast.makeText(MainActivity.this,"You finished the quiz",Toast.LENGTH_LONG).show();
-                        getResults();
+                       
                     }
                 }
 
@@ -165,7 +165,7 @@ public class MainActivity extends AppCompatActivity {
                         newQuestion(turn);
                     } else {
                         Toast.makeText(MainActivity.this, "You finished the quiz", Toast.LENGTH_LONG).show();
-                        getResults();
+                        
                     }
                 } else {
                     //Toast.makeText(MainActivity.this, "Incorrect", Toast.LENGTH_LONG).show();
@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
                         newQuestion(turn);
                     }else {
                         Toast.makeText(MainActivity.this,"You finished the quiz",Toast.LENGTH_LONG).show();
-                        getResults();
+                        
                     }
                 }
 
@@ -214,7 +214,7 @@ public class MainActivity extends AppCompatActivity {
                         newQuestion(turn);
                     } else {
                         Toast.makeText(MainActivity.this, "You finished the quiz", Toast.LENGTH_LONG).show();
-                        getResults();
+                        
                     }
                 } else {
                     //Toast.makeText(MainActivity.this, "Incorrect", Toast.LENGTH_LONG).show();
@@ -235,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
                         newQuestion(turn);
                     }else {
                         Toast.makeText(MainActivity.this,"You finished the quiz",Toast.LENGTH_LONG).show();
-                        getResults();
+                        
                     }
                 }
 
@@ -316,11 +316,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
-    public void getResults(){
-        Intent intent=new Intent(getApplicationContext(),ResultActivity.class);
-        intent.putExtra("rightAnswers",rightAnswers);
-        startActivity(intent);
-    }
+    
 
 }
 
